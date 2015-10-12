@@ -12,5 +12,14 @@ namespace TestTaskAspMvc5.Controllers
         {
             return View();
         }
+
+        //public ActionResult Test(string id, int numberOfKeys)
+        //{
+        //    ViewBag.custId = id;
+        //    ViewBag.numbOfKeys = numberOfKeys;
+        public ActionResult test()
+        {
+            return View();
+        }
     }
 }

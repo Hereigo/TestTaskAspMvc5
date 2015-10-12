@@ -3,14 +3,17 @@ CREATE A NEW WEB APPLICATION (MVC 5)
 
 There you need to create only one page (view) with 2 tabs (javascript in use)
 First tab is defaulted. There you can generate n number of keys for a customer.
-Second tab is the result view. Display there all the customers which were used and a list of unique numbers which were generated for each customer.
+Second tab is the result view. 
+Display there all the customers which were used and a list of unique numbers which were generated for each customer.
 
 FIRST TAB:
 
 html input = customer (id of a customer (you may put here any key))
 html input = the number of new unique digits to be generated
 html button = submit.
+
 When you submit generate N amount of unique numbers and store them into database.
+
 Keys should belong to a customer you entered (customer id). So basically when you enter a new customer Id, new keys will be assigned to that customer.
 The length of a unique number must be unique and 16 digits long.
 

@@ -1,16 +1,27 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Customer Info";
 }
 
 <div id="tabs">
     <ul>
-        <li><a href="#tabs-1">Goto Tab # 1</a></li>
-        <li><a href="#tabs-2">Goto Tab # 2</a></li>
+        <li><a href="#tabs-1">Goto Customer Info</a></li>
+        <li><a href="#tabs-2">Goto Generated Keys</a></li>
     </ul>
     <div id="tabs-1">
-        <p>THIS IS TAB # 1</p>
+
+        <p>Input Customer Info:</p>
+
+        <form name="customerForm1" method="get" action="~/Views/Home/test.cshtml">
+
+            Enter Customer ID: <input type="text" name="custId"  />
+            <br /><br />
+            Enter Number of Keys: <input type="number" name="custNum"  /> * Only Digitals Allowed!
+            <br /><br />
+            <input type="submit" value="Согласен." /><br />
+        </form>
+
     </div>
     <div id="tabs-2">
-        <p>THIS IS TAB # 2</p>
+        <p>Generated Keys:</p>
     </div>
 </div>
