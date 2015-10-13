@@ -11,14 +11,17 @@
 
         <p>Input Customer Info:</p>
 
-        <form name="customerForm1" method="get" action="~/Views/Home/test.cshtml">
 
-            Enter Customer ID: <input type="text" name="custId"  />
+        @using( Html.BeginForm( "test", "Home", FormMethod.Get ) ) )
+        {
+
+
+            Enter Customer ID: <input type="text" name="custId" />
             <br /><br />
-            Enter Number of Keys: <input type="number" name="custNum"  /> * Only Digitals Allowed!
+            Enter Number of Keys: <input type="number" name="custNum" /> * Only Digitals Allowed!
             <br /><br />
             <input type="submit" value="Согласен." /><br />
-        </form>
+        }
 
     </div>
     <div id="tabs-2">
